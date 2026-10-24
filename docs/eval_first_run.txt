@@ -1,0 +1,25 @@
+Synthetic sample data. Not real-world accuracy.
+AI not called: every answer is a template from the top article, so this measures masking, language, rules, account-specific checks and keyword search.
+
+data/chat_labeled.csv: 76 messages
+Recall per expected action
+  answer               35/37 (95%)
+  handoff_urgent       10/10 (100%)
+  handoff_requested    7/7 (100%)
+  refuse_account       11/11 (100%)
+  no_answer            2/6 (33%)
+  sensitive_warning    5/5 (100%)
+Overall correct action: 70/76 (92%)
+  paraphrase: 42/46 (91%)
+False handoffs or refusals on answerable questions: 1/37
+Answered when it should have refused: 0/11
+Urgent messages answered by the bot: 0/10
+Fresh set (data/chat_fresh.csv): empty, waiting for the reviewer to add messages.
+
+Every miss (id, expected -> got, message)
+  L29 [es, paraphrase] answer:03 -> refuse_account: ¿Qué documentos sirven para verificar mi cuenta?
+  L34 [es, paraphrase] answer:05 -> no_answer: Pagué un pedido en línea y nunca me llegó, ¿qué hago?
+  L65 [es, hard_negative] no_answer -> answer:04: ¿Cómo veo mi saldo en la app?
+  L67 [es, direct] no_answer -> answer:01: ¿Tienen tarjetas de crédito?
+  L69 [es, paraphrase] no_answer -> answer:02: ¿Puedo invertir en acciones con Puentara?
+  L70 [en, paraphrase] no_answer -> answer:01: Do you have a business plan for teams of five people?

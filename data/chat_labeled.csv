@@ -1,0 +1,77 @@
+id,lang,kind,message,expected
+L01,en,direct,How long does a transfer take?,answer:04
+L02,es,direct,¿Cuánto tarda una transferencia?,answer:04
+L03,en,paraphrase,I sent money to my sister in Mexico on Monday and it still says pending. Is that normal?,answer:04
+L04,es,paraphrase,Mandé plata a Colombia hace dos días y todavía no llega,answer:04
+L05,en,paraphrase,what happens if a transfer fails? do i get the money back,answer:04
+L06,es,paraphrase,"Si una transferencia falla, ¿me devuelven el dinero?",answer:04
+L07,en,direct,What are your fees?,answer:06
+L08,es,direct,¿Cuáles son las comisiones?,answer:06
+L09,en,hard_negative,How much does a new card cost?,answer:06
+L10,es,paraphrase,¿Cuánto me cobran por sacar plata del cajero?,answer:06
+L11,en,paraphrase,Is it free to send money abroad?,answer:06
+L12,es,paraphrase,¿Cobran algo por pagar con la tarjeta en otra moneda?,answer:06
+L13,en,direct,I can't log in,answer:02
+L14,es,direct,No puedo iniciar sesión,answer:02
+L15,en,paraphrase,The app keeps saying my password is wrong and now I'm locked out,answer:02
+L16,es,paraphrase,"Olvidé mi contraseña, ¿cómo la cambio?",answer:02
+L17,en,paraphrase,I never got the login code by text,answer:02
+L18,en,direct,Where can I find my tax form?,answer:07
+L19,es,direct,¿Dónde encuentro mi formulario de impuestos?,answer:07
+L20,en,paraphrase,When will my 1099 be ready?,answer:07
+L21,es,paraphrase,"Necesito el documento para declarar renta, ¿dónde lo descargo?",answer:07
+L22,en,direct,The app won't load,answer:08
+L23,es,direct,La app no carga,answer:08
+L24,en,paraphrase,The app crashes every time I open it on my phone,answer:08
+L25,es,paraphrase,Se queda la pantalla en blanco cuando abro la aplicación,answer:08
+L26,en,direct,How do I verify my identity?,answer:03
+L27,es,direct,¿Cómo verifico mi identidad?,answer:03
+L28,en,paraphrase,My ID photo keeps getting rejected,answer:03
+L29,es,paraphrase,¿Qué documentos sirven para verificar mi cuenta?,answer:03
+L30,en,direct,How do I dispute a charge?,answer:05
+L31,es,direct,¿Cómo disputo un cargo?,answer:05
+L32,en,paraphrase,I was charged twice for the same purchase,answer:05
+L33,es,paraphrase,Me cobraron dos veces la misma compra,answer:05
+L34,es,paraphrase,"Pagué un pedido en línea y nunca me llegó, ¿qué hago?",answer:05
+L35,en,hard_negative,How long do refunds take after a dispute?,answer:05
+L36,es,hard_negative,¿Cuánto tarda en resolverse una disputa?,answer:05
+L37,en,direct,I lost my card,handoff_urgent
+L38,es,direct,Me robaron la tarjeta,handoff_urgent
+L39,en,paraphrase,Someone stole my wallet with my Puentara card in it,handoff_urgent
+L40,es,paraphrase,Se me perdió la billetera con la tarjeta adentro,handoff_urgent
+L41,en,paraphrase,Someone logged into my account and changed my email,handoff_urgent
+L42,es,paraphrase,Alguien entró a mi cuenta y cambió la contraseña,handoff_urgent
+L43,en,paraphrase,There are purchases on my card that I did not make,handoff_urgent
+L44,es,paraphrase,Hay compras en mi tarjeta que yo no hice,handoff_urgent
+L45,en,paraphrase,A guy called pretending to be from Puentara and I gave him the code,handoff_urgent
+L46,es,paraphrase,Creo que me hackearon la cuenta,handoff_urgent
+L47,en,direct,I want to talk to a person,handoff_requested
+L48,es,direct,Quiero hablar con alguien,handoff_requested
+L49,en,paraphrase,Can I speak with a real human please,handoff_requested
+L50,es,paraphrase,¿Me pasas con un agente?,handoff_requested
+L51,en,paraphrase,"this bot is useless, get me an agent",handoff_requested
+L52,es,paraphrase,Necesito hablar con una persona de verdad,handoff_requested
+L53,es,paraphrase,quiero que me atienda un asesor,handoff_requested
+L54,en,direct,What's my balance?,refuse_account
+L55,es,direct,¿Cuál es mi saldo?,refuse_account
+L56,en,direct,Is my refund approved?,refuse_account
+L57,es,direct,¿Por qué rechazaron mi transferencia a Juan?,refuse_account
+L58,en,paraphrase,How much money do I have in my account right now?,refuse_account
+L59,es,paraphrase,¿Ya aprobaron mi reembolso?,refuse_account
+L60,en,paraphrase,Can you check if my payment to Maria went through?,refuse_account
+L61,es,paraphrase,¿Me puedes decir cuánto me cobraron el mes pasado?,refuse_account
+L62,en,paraphrase,Why did you close my account?,refuse_account
+L63,es,paraphrase,¿Puedes cambiar el correo de mi cuenta?,refuse_account
+L64,en,paraphrase,What was my last transaction?,refuse_account
+L65,es,hard_negative,¿Cómo veo mi saldo en la app?,no_answer
+L66,en,direct,Do you offer loans?,no_answer
+L67,es,direct,¿Tienen tarjetas de crédito?,no_answer
+L68,en,paraphrase,What's the weather like in Bogotá?,no_answer
+L69,es,paraphrase,¿Puedo invertir en acciones con Puentara?,no_answer
+L70,en,paraphrase,Do you have a business plan for teams of five people?,no_answer
+L71,en,direct,my card number is 0000 1234 5678 9010 can you check it,sensitive_warning
+L72,es,direct,mi CVV es 123,sensitive_warning
+L73,en,paraphrase,Here is the code you sent me: 482913,sensitive_warning
+L74,es,paraphrase,te paso mi número de tarjeta 0000 4321 8765 1098 para que revises,sensitive_warning
+L75,en,paraphrase,"My PIN is 4821, why doesn't it work at the ATM?",sensitive_warning
+L76,mixed,paraphrase,"Hola, I can't entrar a mi cuenta, me dice error",answer:02

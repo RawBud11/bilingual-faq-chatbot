@@ -1,0 +1,18 @@
+id,lang,kind,message,expected
+F01,en,fresh,Is there a fee to receive money from a client in the US?,answer:06
+F02,es,fresh,¿Dónde descargo mi formulario 1099 para declarar?,answer:07
+F03,en,fresh,The app just shows a white screen when I open it on my phone,answer:08
+F04,es,fresh,"No me deja entrar, dice que mi clave es incorrecta",answer:02
+F05,en,fresh,Someone stole my card,handoff_urgent
+F06,es,fresh,"Hay compras en mi cuenta que yo no hice, creo que me hackearon",handoff_urgent
+F07,en,fresh,I want a human,handoff_requested
+F08,es,fresh,Quiero hablar con un asesor,handoff_requested
+F09,en,fresh,Why was my payment yesterday declined?,refuse_account
+F10,es,fresh,¿Cuánta plata tengo disponible ahorita?,refuse_account
+F11,en,fresh,"My CVV is 123, can you check my card?",sensitive_warning
+F12,es,fresh,Te paso el código que me llegó: 482913,sensitive_warning
+F13,es,fresh,"Me cobraron dos veces el mismo pedido, ¿cómo lo reclamo?",answer:05
+F14,en,fresh,Do you offer loans?,no_answer
+F15,es,fresh,¿Puedo pedir un préstamo?,no_answer
+F16,en,fresh,How do I verify my identity? It keeps asking me for a selfie,answer:03
+F17,en,fresh,Can I speak to someone real please,handoff_requested
