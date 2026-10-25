@@ -14,7 +14,7 @@ Overall correct action: 70/76 (92%)
 False handoffs or refusals on answerable questions: 1/37
 Answered when it should have refused: 0/11
 Urgent messages answered by the bot: 0/10
-Fresh set (data/chat_fresh.csv): empty, waiting for the reviewer to add messages.
+Fresh set (data/chat_fresh.csv): empty, waiting for held-out test messages to be added.
 
 Every miss (id, expected -> got, message)
   L29 [es, paraphrase] answer:03 -> refuse_account: ¿Qué documentos sirven para verificar mi cuenta?
