@@ -41,7 +41,7 @@ def render_inbox(records, lang, path_label):
     if not records:
         parts.append(f'<p class="empty">{escape(labels["empty"])}</p>')
     else:
-        parts.append(f'<p>{escape(labels["count"].format(count=len(records), path=path_label))}</p>')
+        parts.append(f'<p>{escape(labels["count_one" if len(records) == 1 else "count"].format(count=len(records), path=path_label))}</p>')
     for record in sorted(records, key=_sort_key):
         urgency = str(record.get("urgency", ""))
         summary = record.get("summary")

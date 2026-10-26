@@ -106,7 +106,7 @@ def main(argv=None):
         count = play(conversations, client, model, ui, store, build_indexes(load_kb()))
     except UserError as error:
         sys.exit(str(error))
-    print(STRINGS[ui]["demo"]["footer"].format(count=count, path=relative))
+    print(STRINGS[ui]["demo"]["footer_one" if count == 1 else "footer"].format(count=count, path=relative))
     if args.record:
         print(t(ui, "recorded").format(count=client.save(), path=config.FIXTURES_FILE.name))
     print(STRINGS[ui]["demo"]["next"])
