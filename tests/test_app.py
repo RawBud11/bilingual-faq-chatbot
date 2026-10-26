@@ -170,6 +170,14 @@ def test_agent_inbox_in_spanish(server):
     assert 'lang="es"' in page
 
 
+def test_agent_inbox_uses_the_singular_for_one_handoff(server):
+    post(server, "/api/chat", {"message": "Me robaron la tarjeta"})
+    _, _, page_es = get(server, "/agent?lang=es")
+    _, _, page_en = get(server, "/agent")
+    assert "1 traspaso." in page_es and "1 traspasos" not in page_es
+    assert "1 handoff." in page_en and "1 handoffs" not in page_en
+
+
 def test_empty_inbox_says_how_to_fill_it(server):
     _, _, page = get(server, "/agent")
     assert "No handoffs yet" in page

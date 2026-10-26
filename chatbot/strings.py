@@ -80,6 +80,7 @@ STRINGS = {
             "title": "Agent inbox: handoffs from the chat",
             "banner": "Puentara is a fictional company. Read-only demo inbox: nothing here is sent to customers, and it does not connect to a real helpdesk.",
             "count": "{count} handoffs, urgent first. Source: {path}",
+            "count_one": "1 handoff. Source: {path}",
             "empty": "No handoffs yet. Open the chat and tap \"Talk to a person\", or run: python demo.py",
             "switch": "Ver en español",
             "reference": "Reference", "time": "Time (UTC)", "urgency": "Urgency",
@@ -128,6 +129,7 @@ STRINGS = {
             "blocked": "  -> the checker blocked an answer ({reason}); the customer never saw it",
             "handoff": "  -> Handoff {ref} ({urgency}, {category})",
             "footer": "{count} handoffs written to {path}. Nothing was sent.",
+            "footer_one": "1 handoff written to {path}. Nothing was sent.",
             "next": "Next: python app.py, then open http://127.0.0.1:8000/agent to see them in the inbox.",
         },
         "eval": {
@@ -209,6 +211,7 @@ STRINGS = {
             "title": "Bandeja de agentes: traspasos desde el chat",
             "banner": "Puentara es una empresa ficticia. Bandeja de demostración de solo lectura: nada de lo que ves aquí se envía a los clientes y no está conectada a un sistema de soporte real.",
             "count": "{count} traspasos, primero los urgentes. Archivo: {path}",
+            "count_one": "1 traspaso. Archivo: {path}",
             "empty": "Todavía no hay traspasos. Abre el chat y toca \"Hablar con una persona\", o ejecuta: python demo.py",
             "switch": "View in English",
             "reference": "Referencia", "time": "Hora (UTC)", "urgency": "Urgencia",
@@ -257,6 +260,7 @@ STRINGS = {
             "blocked": "  -> la revisión bloqueó una respuesta ({reason}); el cliente nunca la vio",
             "handoff": "  -> Traspaso {ref} ({urgency}, {category})",
             "footer": "Se escribieron {count} traspasos en {path}. No se envió nada.",
+            "footer_one": "Se escribió 1 traspaso en {path}. No se envió nada.",
             "next": "Siguiente paso: python app.py, y luego abre http://127.0.0.1:8000/agent para verlos en la bandeja.",
         },
         "eval": {

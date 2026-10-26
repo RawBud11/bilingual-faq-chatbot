@@ -6,6 +6,16 @@ In one line: a website FAQ chatbot that answers from your help center with keywo
 
 > **Demo scenario.** Puentara is a fictional money app for freelancers and small businesses in the US and Latin America. All messages and conversations are synthetic. The 8 help articles are placeholder content, not a writing sample. This is a local demo, not production-hardened.
 
+## Why I built this
+
+I spent about three years in bilingual customer support for banking and financial services, answering customers in English and Spanish. Most questions repeat, and the answers are already written down somewhere. The risky moments are different: a lost card, a customer about to type a code into the chat, someone asking for a balance nobody in the chat can see. A chatbot that guesses in those moments does real damage.
+
+So the part of this project I care about most isn't the answering. It's knowing when not to answer: refusing account questions, hiding what customers shouldn't type, and getting urgent cases to a person fast, with a summary so the customer doesn't have to repeat everything.
+
+The hardest part was the Spanish people actually write. "¿Cuánta plata tengo disponible ahorita?" is a balance question, and it still slipped past the account check on the fresh test messages. That miss is listed under "Known limitations" on purpose.
+
+What it can't do: it can't see any account, its search matches keywords rather than meaning, and it isn't connected to a real helpdesk.
+
 ## The problem
 
 The same simple questions arrive all day, in two languages: "How much does it cost to send money to Mexico?", "¿Por qué sigue pendiente mi transferencia?", "I can't log in." The answers are already in the help center, but customers don't look there, and the team can't cover every hour. Spanish-speaking customers wait longest. And a chatbot that guesses, or that asks for a card number "to check", is worse than no chatbot at all.
@@ -102,7 +112,7 @@ python evaluate.py --ui-lang es
 python -m pytest -q
 ```
 
-388 tests pass offline, with no API key and no network (Windows 11, Python 3.14.8, 2026-10-24).
+389 tests pass offline, with no API key and no network (Python 3.13 on Linux, 2026-10-25).
 
 ### 6. Optional: live mode with your own key
 
@@ -158,6 +168,10 @@ The whole widget is one line:
 The demo page `static/index.html` uses it already. To put it on a page served from another address, add that page's origin to `CORS_ALLOWED_ORIGINS` in `config.py`, for example `["https://help.example.com"]`. By default the list is empty and only pages served by `app.py` can call the chat. That other-site setup is covered by an automated test of the server, but I have not tried it in a browser on a real second site.
 
 ## Screenshots
+
+![A Spanish conversation: a pending-transfer question answered from the help center, then a stolen card with a typed card number, which is masked and handed to a person as urgent, then the same handoff in the agent inbox](docs/chat_demo.gif)
+
+A Spanish conversation in demo mode, about 20 seconds: an answer from the help center, then a stolen card. The card number is masked, the case goes to a person as urgent (H-0001), and it appears in the agent inbox in Spanish.
 
 ![The chat widget in Spanish: a pending-transfer answer with its source link, then a balance question refused with a "Hablar con una persona" button](docs/chat_widget.png)
 

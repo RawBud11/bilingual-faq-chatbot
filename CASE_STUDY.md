@@ -31,7 +31,7 @@ On the team's side, every handoff lands in an inbox with a reference, its urgenc
 - Keyword search (a small BM25 scorer) over 8 placeholder help articles in English and Spanish.
 - Claude API for answers in live mode. Demo mode runs free with hand-written sample answers.
 - Checks in both languages for urgent cases, account questions, requests for a person, typed card numbers and codes, and unsafe answers.
-- 388 automated tests, a scripted demo and an evaluation script with labeled synthetic messages.
+- 389 automated tests, a scripted demo and an evaluation script with labeled synthetic messages.
 
 ## What the demo shows (sample data)
 
