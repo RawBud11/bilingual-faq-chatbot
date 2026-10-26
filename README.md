@@ -30,8 +30,6 @@ You need **Python 3.11 or newer** (built and tested on Python 3.14.8). No API ke
 
 ### 1. Get the code
 
-Once the repo is public:
-
 ```
 git clone https://github.com/RawBud11/bilingual-faq-chatbot.git
 cd bilingual-faq-chatbot
