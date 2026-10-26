@@ -1,6 +1,5 @@
 # Copied from bilingual-reply-assistant (reply_assistant/mask.py), not imported across repos.
 # Copied from bilingual-ticket-triage (ticket_triage/mask.py), not imported across repos.
-# Added in bilingual-reply-assistant: email and phone masking. Added here: passwords.
 """Mask card numbers, CVVs, one-time codes, passwords after a label, emails and
 phone numbers before anything else sees them.
 

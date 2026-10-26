@@ -1,6 +1,5 @@
 # Copied from bilingual-reply-assistant (reply_assistant/rules.py), not imported across repos.
 # Copied from bilingual-ticket-triage (ticket_triage/rules.py), not imported across repos.
-# A few urgent patterns were added after the first evaluation run; each is marked "Added in bilingual-reply-assistant".
 """Keyword rules for the clear cases, in English and Spanish.
 
 How a ticket is decided:
@@ -68,8 +67,7 @@ RULES = [
         r"\b(phone|cell|mobile)( was| got)? (lost|stolen)\b",
         r"\b(perdi|perdio|robaron|extravie)( mi| el)? (celular|telefono|movil)\b",
         r"\b(celular|telefono|movil) (robado|perdido|extraviado)\b",
-        # Added in bilingual-reply-assistant after the first evaluation run
-        # (see NOTES.md): fake callers and handing over a code.
+        # Fake callers and handing over a code.
         r"\b(pretending|pretended|claiming|claimed) to be\b",
         r"\bdiciendo que (eran|era) (del|de) (banco|puentara)\b",
         r"\b(gave|give) (him|her|them|the caller) (the|my|a) code\b",
@@ -103,8 +101,7 @@ RULES = [
         r"\b(robaron|robo|robada|robado|perdi|perdio|perdida|extravie|extraviada)\b.{0,40}\b(tarjeta|cartera|billetera)\b",
         r"\b(tarjeta|cartera|billetera)\b.{0,40}\b(robada|robaron|perdida|extraviada)\b",
         r"\bno encuentro (mi|la) tarjeta\b",
-        # Added in bilingual-reply-assistant after the first evaluation run
-        # (see NOTES.md): wallets and bags taken, cards that are "gone".
+        # Wallets and bags taken, cards that are "gone".
         r"\bcan'?t find (my )?(wallet|purse)\b",
         r"\b(wallet|purse|bag|backpack)\b.{0,30}\b(taken|swiped|snatched|gone)\b",
         r"\bcards?\b.{0,60}\b(was|were|is) gone\b",
@@ -130,8 +127,7 @@ RULES = [
         r"\bsin mi (permiso|autorizacion)\b",
         r"\bme (sacaron|robaron) (dinero|plata)\b",
         r"\balguien uso mi tarjeta\b",
-        # Added in bilingual-reply-assistant after the first evaluation run
-        # (see NOTES.md): "not me", strange activity, purchases far away.
+        # "not me", strange activity, purchases far away.
         r"\bsomeone (is using|has used|has been using) my card\b",
         r"\b(it )?wasn'?t me\b",
         r"\b(weird|strange|suspicious) (transactions|charges|payments|purchases)\b",
